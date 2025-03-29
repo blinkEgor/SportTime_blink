@@ -3,17 +3,19 @@ This my own workout web-app, For personal use
 
 ## Структура проекта
 
-- `Assets/Icons/` - иконки
-- `Assets/Images/` - изображения
+- `assets/` - Медиафайлы:
+  - `icons/` - PNG иконки
+  - `images/` - Изображения упражнений
 
-- `Docs/` - документация проекта
+- `src/` - Исходный код:
+  - `js/` - Основная логика
+  - `styles/` - CSS-стили
+  - `utils/` - Вспомогательные скрипты
 
-- `Pages/` - HTML страницы приложения
-- `Pages/Exercises` - HTML страницы упражнений
+- `pages/` - HTML-страницы:
+  - `exercises/` - Упражнения ( dips.html, pull-ups.html, ... )
 
-- `Src/Js/` - основной JavaScript код
-- `Src/Styles/` - основные стили приложения
-- `Src/Utils/` - дополнительный JavaScript код с особыми решениями
+- `docs/` - Документация
 
 ## Запуск
 
@@ -30,4 +32,17 @@ This my own workout web-app, For personal use
 - Semantic HTML
 
 ## Планы развития
-https://www.notion.so/SportTime_blink-ADD-1c2432ce7e0a80848df8c8f14b654ee4?pvs=4#1c2432ce7e0a80cb84d4e973532ff32b
+### 2.A.2 - Создание исполняемого index.html файла
+
+- [ ]  Со старта верстать используя семантические тэги
+- [ ]  Сверстать главную страницу с задумкой на расширение
+
+### 2.A.3 - Сверстать другие страницы
+
+- [ ]  warm-up.html
+- [ ]  pull-ups.html
+- [ ]  dumbbel-shoulder-fly.html
+- [ ]  dips.html
+- [ ]  dumbbell-thruster.html
+- [ ]  punching-bag-fight.html
+- Верстать с задумкой на динамическое изменение видимости в будущем
