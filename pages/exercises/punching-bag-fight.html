@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punching Bag Fight</title>
+</head>
+<body>
+    <!-- Шапка приложения с двумя функциональными иконками и названием приложения -->
+    <header>
+        <button aria-label="Remove">
+            <img src="" width="64" height="64" alt="Trash can icon" />
+        </button>
+        <h1>Punching Bag Fight</h1>
+        <nav> <!-- Кнопка вернуться назад в главное меню -->
+            <a href="../../index.html" aria-label="Go to Main Menu">
+                <img src="" width="64" height="64" alt="Back arrow icon" />
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+    <article>
+
+        <!-- Информация с кнопкой старта -->
+        <section>
+            <!-- Обёртка для информационной карточки со временем -->
+            <div>
+                <p>Time rest: <span></span> sec</p> <!-- 60 sec -->
+                <P>Time work: <span></span> sec</P> <!-- 60 sec -->
+                <p>Total time spent: <span></span> sec</p> <!-- 1020 sec -->
+            </div>
+            <!-- Обёртка для информационной карточки количеством упражнений -->
+            <div>
+                <p>Circles count: <span></span> rep</p> <!-- 9 rep -->
+                <!-- Свёрнутый список упражнений -->
+                <details>
+                    <summary><strong>List of Punching Bag Fight Exercises</strong></summary>
+                    <ol>
+                        <li>Left straight punch ( jab ), slip to the right</li>
+                        <li>Right straight punch ( cross ), slip to the left</li>
+                        <li>Left hook, duck and step to the left</li>
+                        <li>Right hook, duck and step to the right</li>
+                        <li>Left uppercut, bounce back</li>
+                        <li>Right uppercut, pivot on the left foot to the left</li>
+                        <li>Freestyle defense and offense, left hand only</li>
+                        <li>Freestyle defense and offense, right hand only</li>
+                        <li>Free sparring ( combination of all techniques )</li>
+                    </ol>
+                </details>
+            </div>
+            <!-- Кнопка старта -->
+            <button>Start</button>
+        </section>
+
+        <!-- Динамические карточки с таймером и минимальной информацией -->
+        <section>
+            <!-- Блок управления кнопками паузы/остановки -->
+            <div>
+                <button>Pause</button>
+                <button>Resume</button>
+                <button>Stop</button>
+            </div>
+
+            <!-- Название упражнения ( динамически изменяемое ) -->
+            <h2>Rephran</h2>
+
+            <!-- Таймер ( изменяемое значение ) -->
+            <div>00:30</div>
+
+            <!-- Дополнительная информация -->
+            <div>Rep info</div>
+        </section>
+    </article>
+    </main>
+
+    <!-- Нижний колонтитул приложения с ссылками на контакты разработчика -->
+    <footer>
+        <p>Created by blinkEgor | Contact me</p>
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
