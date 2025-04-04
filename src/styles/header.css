@@ -34,7 +34,7 @@ header #title {
     padding: 0 30px;       /* Компенсируем обрезание текста при наклоне */
 }
 
-header .icon-button {
+header button {
     /* Размеры и выравнивание */
     width: 64px;
     height: 64px;
@@ -52,15 +52,15 @@ header .icon-button {
     border-radius: 8px; /* Опционально */
 }
 
-header .icon-button:hover {
+header button:hover {
     background-color: rgba(0, 0, 0, 0.05); /* Лёгкий hover */
 }
 
-header .icon-button:active {
+header button:active {
     background-color: rgba(0, 0, 0, 0.1); /* Эффект нажатия */
 }
 
-header .icon-button svg {
+header button svg {
     /* Стили для иконки внутри */
     width: 64px;
     height: 64px;
@@ -68,11 +68,11 @@ header .icon-button svg {
 }
 
 /* Первая кнопка (левый нижний угол) */
-header .icon-button:first-of-type {
+header button:first-of-type {
     align-self: flex-end; /* Выравнивание внизу */
 }
 
 /* Вторая кнопка (правый верхний угол) */
-header .icon-button:last-of-type {
+header button:last-of-type {
     align-self: flex-start; /* Выравнивание вверху */
 }
