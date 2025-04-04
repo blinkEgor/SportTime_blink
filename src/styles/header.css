@@ -1,0 +1,78 @@
+:root {
+    --primary: #FF5E5B;
+    --secondary: #FF9A47;
+    --bg: #38ad6d;
+    --bg-secondary: #50d88d;
+    --text-bg: #98ecbe;
+    --text: #2D2D2D;
+    --text-light: #6E6E6E;
+    --accent-time: #00C2D7;
+    --accent-blind: #6B5BFF;
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative; /* Для позиционирования иконок */
+    padding: 10px;
+    background-color: var(--bg);
+}
+
+header #title {
+    text-align: center;
+    overflow-wrap: break-word;  /* Переносит обычные слова */
+    word-break: break-word;    /* Разбивает только очень длинные слова */
+    background-color: var(--text-bg);
+    color: var(--text);
+    margin: 0 10px;
+    border-radius: 60px 0;
+
+    /* Для наклона */
+    transform: skew(-5deg); /* Наклон в -5 градусов (можно регулировать) */
+    display: inline-block;  /* Чтобы transform работал корректно */
+    padding: 0 30px;       /* Компенсируем обрезание текста при наклоне */
+}
+
+header .icon-button {
+    /* Размеры и выравнивание */
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Сброс стандартных стилей */
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    /* Hover-эффект */
+    transition: background-color 0.2s;
+    border-radius: 8px; /* Опционально */
+}
+
+header .icon-button:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Лёгкий hover */
+}
+
+header .icon-button:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Эффект нажатия */
+}
+
+header .icon-button svg {
+    /* Стили для иконки внутри */
+    width: 64px;
+    height: 64px;
+    fill: currentColor; /* Чтобы цвет наследовался */
+}
+
+/* Первая кнопка (левый нижний угол) */
+header .icon-button:first-of-type {
+    align-self: flex-end; /* Выравнивание внизу */
+}
+
+/* Вторая кнопка (правый верхний угол) */
+header .icon-button:last-of-type {
+    align-self: flex-start; /* Выравнивание вверху */
+}
