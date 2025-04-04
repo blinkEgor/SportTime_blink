@@ -13,6 +13,13 @@ body {
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5; /* удобочитаемый межстрочный интервал */
     -webkit-font-smoothing: antialiased; /* сглаживание шрифтов в WebKit */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Прижимаем футер вниз */
 }
 
 img, picture, video, canvas, svg {
