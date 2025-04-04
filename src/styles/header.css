@@ -22,12 +22,11 @@ header #title {
     background-color: var(--text-bg);
     color: var(--text);
     margin: 0 10px;
-    border-radius: 60px 0;
-
-    /* Для наклона */
-    transform: skew(-5deg); /* Наклон в -5 градусов (можно регулировать) */
-    display: inline-block;  /* Чтобы transform работал корректно */
-    padding: 0 30px;       /* Компенсируем обрезание текста при наклоне */
+    padding: 10px 15px; /* Добавляем вертикальные отступы */
+    line-height: 1.2; /* Чёткое управление высотой строки */
+    display: inline-block; /* Для точного контроля */
+    vertical-align: middle; /* Выравнивание по центру */
+    box-sizing: border-box; /* Учитываем padding в высоте */
 }
 
 header button {
