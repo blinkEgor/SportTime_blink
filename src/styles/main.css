@@ -1,0 +1,23 @@
+main {
+    background-color: var(--bg-main);
+}
+
+main article {
+    padding: 10px;
+}
+
+main article section {
+    background-color: var(--bg-secondary);
+    padding: 10px;
+}
+
+main section nav ul {
+    display: grid;
+    gap: 10px; /* Единый отступ между всеми элементами */
+}
+
+h3 {
+    color: var(--text);
+    background-color: var(--text-bg);
+    padding: 10px;
+}

@@ -1,22 +1,10 @@
-:root {
-    --primary: #FF5E5B;
-    --secondary: #FF9A47;
-    --bg: #38ad6d;
-    --bg-secondary: #50d88d;
-    --text-bg: #98ecbe;
-    --text: #2D2D2D;
-    --text-light: #6E6E6E;
-    --accent-time: #00C2D7;
-    --accent-blind: #6B5BFF;
-  }
-
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative; /* Для позиционирования иконок */
     padding: 10px;
-    background-color: var(--bg);
+    background-color: var(--bg-header);
 }
 
 header #title {
