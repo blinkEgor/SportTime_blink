@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/styles/index.css">
+    <link rel="stylesheet" href="../../src/styles/header.css">
+    <link rel="stylesheet" href="../../src/styles/main.css">
+    <link rel="stylesheet" href="../../src/styles/footer.css">
+    <link rel="stylesheet" href="../../src/styles/cards.css">
+    <link rel="stylesheet" href="../../src/styles/buttons.css">
     <title>Pull-ups</title>
 </head>
 <body>
@@ -11,67 +17,74 @@
         <button aria-label="Remove">
             <img src="" width="64" height="64" alt="Trash can icon" />
         </button>
-        <h1>Pull-ups</h1>
-        <nav> <!-- Кнопка вернуться назад в главное меню -->
-            <a href="../../index.html" aria-label="Go to Main Menu">
+        <h1 id="title">Pull-ups</h1>
+        <button aria-label="Go to Main Menu"> <!-- Кнопка вернуться назад в главное меню -->
+            <a href="../../index.html">
                 <img src="" width="64" height="64" alt="Back arrow icon" />
             </a>
-        </nav>
+        </button>
     </header>
     
     <main>
     <article>
 
         <!-- Информация с кнопкой старта -->
-        <section>
+        <section id="main-info-about-exercise">
             <!-- Обёртка для информационной карточки со временем -->
-            <div>
+            <div class="card info-card">
                 <p>Time rest: <span></span> sec</p> <!-- 120 sec -->
                 <p>Previous time spent: <span></span> sec</p> <!-- From 285 sec to 420 sec -->
-            </div>
-            <!-- Обёртка для информационной карточки количеством упражнений -->
-            <div>
                 <p>Circles count: <span></span> rep</p> <!-- 3 rep -->
                 <p>Additional weight: <span></span> kg</p> <!-- 0 kg -->
+            </div>
+            <!-- Обёртка для информационной карточки количеством упражнений -->
+            <div class="card all-info-card">
                 <!-- Упражнение -->
                 <ul>
                     <li>Pull-ups with additional weight</li>
                 </ul>
             </div>
             <!-- Кнопка старта -->
-            <button>Start</button>
+            <div class="start-button-wrapper">
+                <button>Start</button>
+            </div>
         </section>
 
         <!-- Динамические карточки с таймером и минимальной информацией -->
-        <section>
+        <section id="exercise-card" style="display: none;">
             <!-- Блок управления кнопками паузы/остановки -->
-            <div>
+            <div class="exercise-control-panel">
                 <button>Pause</button>
                 <button>Resume</button>
                 <button>Stop</button>
             </div>
 
-            <!-- Название упражнения ( динамически изменяемое ) -->
-            <h2>Rephran</h2>
-
-            <!-- Таймер ( изменяемое значение ) -->
-            <div>00:30</div>
-
-            <!-- Дополнительная информация -->
-            <div>Rep info</div>
+            <!-- Блок активного упражнения -->
+            <div class="exercise-active">
+                <!-- Название упражнения ( динамически изменяемое ) -->
+                <h2 id="exercise-name">Rephran</h2>
+    
+                <!-- Таймер ( изменяемое значение ) -->
+                <p id="exercise-time">00:30</p>
+    
+                <!-- Дополнительная информация -->
+                <p id="exercise-info">Rep info</p>
+            </div>
         </section>
     </article>
     </main>
 
     <!-- Нижний колонтитул приложения с ссылками на контакты разработчика -->
     <footer>
-        <p>Created by blinkEgor | Contact me</p>
-        <ul>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Telegram</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
+        <div class="developer-contacts">
+            <p>Created by blinkEgor | Contact me</p>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
