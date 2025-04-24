@@ -1,0 +1,7 @@
+.start-button-wrapper button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: var(--button-play);
+    color: var(--text-button)
+}
