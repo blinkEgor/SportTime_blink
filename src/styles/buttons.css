@@ -5,3 +5,16 @@
     background-color: var(--button-play);
     color: var(--text-button)
 }
+
+.increase-decrease-button {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: var(--success);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
