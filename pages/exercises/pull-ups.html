@@ -32,10 +32,10 @@
         <section id="main-info-about-exercise">
             <!-- Обёртка для информационной карточки со временем -->
             <div class="card info-card">
-                <p>Time rest: <span></span> sec</p> <!-- 120 sec -->
-                <p>Previous time spent: <span></span> sec</p> <!-- From 285 sec to 420 sec -->
-                <p>Circles count: <span></span> rep</p> <!-- 3 rep -->
-                <p>Additional weight: <span></span> kg</p> <!-- 0 kg -->
+                <p>Time rest: <button id="decrease-time-rest" class="increase-decrease-button primary-color">-</button> <span id="time-rest"></span> <button id="increase-time-rest" class="increase-decrease-button success-color">+</button> sec</p> <!-- 120 sec -->
+                <p>Previous time spent: <span id="prev-time-spent"></span> sec</p> <!-- From 285 sec to 420 sec -->
+                <p>Circles count: <button id="decrease-time-rest" class="increase-decrease-button primary-color">-</button> <span id="circles-count"></span> <button id="increase-time-rest" class="increase-decrease-button success-color">+</button> rep</p> <!-- 3 rep -->
+                <p>Additional weight: <button id="decrease-weight" class="increase-decrease-button primary-color">-</button> <span id="weight"></span> <button id="increase-weight" class="increase-decrease-button success-color">+</button> kg</p> <!-- 0 kg -->
             </div>
             <!-- Обёртка для информационной карточки количеством упражнений -->
             <div class="card all-info-card">
@@ -46,7 +46,7 @@
             </div>
             <!-- Кнопка старта -->
             <div class="start-button-wrapper">
-                <button>Start</button>
+                <button id="start-button">Start</button>
             </div>
         </section>
 
